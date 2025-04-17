@@ -2,11 +2,12 @@ import React from 'react';
 
 const navbar = () => {
     const links = <>
-    <li className='m-2'>Home</li>
-    <li className='m-2'>About</li>
+    <li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Home</li>
+    <li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Listed Books</li>
+    <li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Pages to Read</li>
     </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 py-[30px]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -18,15 +19,16 @@ const navbar = () => {
             {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Boi Poka</a>
+    <a className="font-bold text-[28px]">Boi Poka</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal gap-[16px] px-1">
         {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-4">
+    <a className="rounded-md text-white md:px-[28px] md:py-[12px] md:text-[18px] bg-[#23BE0A]">Sign In</a>
+    <a className="rounded-md text-white md:px-[28px] md:py-[12px] md:text-[18px] bg-[#59C6D2]">Sign Up</a>
   </div>
 </div>
     );

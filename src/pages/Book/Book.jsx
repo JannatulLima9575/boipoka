@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import { IoIosStarHalf } from "react-icons/io";
 
 const Book = ({singleBook}) => {
     // const data = use(bookPromise);
@@ -21,7 +22,8 @@ const Book = ({singleBook}) => {
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions justify-end">
       <div className="badge badge-outline">{category}</div>
-      <div className="badge badge-outline">{rating}</div>
+      <div className="badge badge-outline">{rating} <IoIosStarHalf />
+      </div>
     </div>
   </div>
 </div>
