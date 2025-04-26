@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const navbar = () => {
     const links = <>
-    <li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Home</li>
+    <Link to='/'><li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Home</li></Link>
+    <Link to='/about'><li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>About</li></Link>
     <li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Listed Books</li>
     <li className='m-2 font-semibold text-[18px] hover:text-[#23BE0A] py-2 px-4 hover:border hover:rounded-lg'>Pages to Read</li>
+    
     </>
     return (
         <div className="navbar bg-base-100 py-[30px]">
@@ -19,7 +22,7 @@ const navbar = () => {
             {links}
       </ul>
     </div>
-    <a className="font-bold text-[28px]">Boi Poka</a>
+    <a className="font-bold text-[28px]">BookBloom</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal gap-[16px] px-1">
