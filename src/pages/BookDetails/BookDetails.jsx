@@ -22,7 +22,7 @@ const BookDetails = () => {
     
     return (
         <div className="flex flex-col md:flex-row gap-8 p-3 h-[711px]">
-            <div className="flex-shrink-0 h-full bg-[#1313130D]/5 w-1/2">
+            <div className="flex-shrink-0 h-full bg-base-300 w-1/2">
                 <img className="w-full h-full object-cover rounded-2xl shadow-md py-[60px] px-[74px]" src={image} alt={bookName} />
             </div>
 
