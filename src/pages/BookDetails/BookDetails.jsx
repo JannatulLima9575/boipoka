@@ -5,6 +5,8 @@ import { addToStoredDB } from '../../utilites/addToDB';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
+import { ToastContainer, toast } from 'react-toastify';
+
 const MySwal = withReactContent(Swal)
 
 const BookDetails = () => {
@@ -22,12 +24,13 @@ const BookDetails = () => {
       // if book already exists then show a alert
       // if book not exits then push i the collection or array
 
-      MySwal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
-        icon: "success"
-      });
-      addToStoredDB(id);
+      // MySwal.fire({
+      //   title: "Good job!",
+      //   text: "You clicked the button!",
+      //   icon: "success"
+      // });
+      // addToStoredDB(id);
+      toast("Wow so easy!")
     }
     
 
@@ -87,6 +90,7 @@ const BookDetails = () => {
     </div>
     </div>
 
+    <ToastContainer />
  
         </div>
         </div>
